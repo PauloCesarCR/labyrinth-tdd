@@ -29,7 +29,7 @@ describe('position', () => {
 
         //arrange
         const sut = new PositionNew()
-        const lines = [
+        const lines: ReadonlyArray<string> = [
             "5 8",
             "1 1 1 1 1 1 1 1",
             "1 1 0 1 0 1 1 1",
@@ -56,7 +56,7 @@ describe('position', () => {
 
         const sut = new PositionNew()
 
-        const lines = [
+        const lines: ReadonlyArray<string> = [
             "5 8",
             "1 1 1 1 1 1 1 1",
             "1 1 0 1 0 1 1 1",
@@ -78,7 +78,7 @@ describe('position', () => {
     test("move right position", () => {
         const sut = new PositionNew()
 
-        const lines = [
+        const lines: ReadonlyArray<string> = [
             "5 8",
             "1 1 1 1 1 1 1 1",
             "1 1 0 1 0 1 1 1",
@@ -100,7 +100,7 @@ describe('position', () => {
     test("move bottom position", () => {
         const sut = new PositionNew()
 
-        const lines = [
+        const lines: ReadonlyArray<string> = [
             "5 8",
             "1 1 1 1 1 1 1 1",
             "1 1 0 1 0 1 1 1",
