@@ -17,7 +17,7 @@ describe('position', () => {
             ]
 
         //act
-            const originPosition = sut.execute(lines)
+            const {originPosition} = sut.execute(lines)
 
         //assert
             expect(originPosition[0]).toBe(4)
@@ -118,5 +118,5 @@ describe('position', () => {
         expect(newPosition[0]).toBe(4)
         expect(newPosition[1]).toBe(1)
     })
-    
+        
 })
