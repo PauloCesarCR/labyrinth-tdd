@@ -1,12 +1,10 @@
-import { readFileInterface } from "../interfaces/readFileInterface";
-import { readFileRepository } from "../infra/repositories/readFileRepository";
+import { readFileInterface } from '../interfaces/readFileInterface'
 
-export class ReadFileCase{
- constructor(readonly readFileRepository: readFileInterface){}
+export class ReadFileCase {
+    constructor(readonly readFileRepository: readFileInterface) {}
 
-async execute(): Promise<string[]> {
-     const lines = await this.readFileRepository.readFile();
-     return lines;
- }
-
+    async execute(): Promise<string[]> {
+        const lines = await this.readFileRepository.readFile()
+        return lines
+    }
 }

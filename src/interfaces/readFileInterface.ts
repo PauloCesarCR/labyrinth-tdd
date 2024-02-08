@@ -1,4 +1,3 @@
 export interface readFileInterface {
-    readFile(): Promise<string[]>;
-
+    readFile(): Promise<string[]>
 }

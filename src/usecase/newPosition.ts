@@ -1,25 +1,27 @@
 export class PositionNew {
-    constructor(){}
+    constructor() {}
 
-    execute(moveDirection:string, currentRow: number, currentCol: number): number[]{
-
-        if(moveDirection == "top"){
-            return [currentRow -1, currentCol]
+    execute(
+        moveDirection: string,
+        currentRow: number,
+        currentCol: number
+    ): number[] {
+        if (moveDirection == 'top') {
+            return [currentRow - 1, currentCol]
         }
 
-        if(moveDirection == "left"){
+        if (moveDirection == 'left') {
             return [currentRow, currentCol - 1]
         }
 
-        if(moveDirection == "right"){
+        if (moveDirection == 'right') {
             return [currentRow, currentCol + 1]
         }
 
-        if(moveDirection == "bottom"){
+        if (moveDirection == 'bottom') {
             return [currentRow + 1, currentCol]
         }
 
         return [currentRow, currentCol]
-    
     }
 }

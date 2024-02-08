@@ -1,8 +1,7 @@
-import { readFileRepository } from "../../infra/repositories/readFileRepository";
-import { ReadFileCase } from "../../usecase/readFile";
+import { readFileRepository } from '../../infra/repositories/readFileRepository'
+import { ReadFileCase } from '../../usecase/readFile'
 
 describe('file', () => {
-
     test('readFile test', async () => {
         //arrange
         const repository = new readFileRepository()
@@ -12,7 +11,6 @@ describe('file', () => {
         const lines = await sut.execute()
 
         //Assert
-        expect(lines.length).toBeGreaterThan(3);
-
-    });
-});
+        expect(lines.length).toBeGreaterThan(3)
+    })
+})
