@@ -18,8 +18,8 @@ describe('change position', () => {
         const { originPosition } = sut.execute(lines)
 
         //assert
-        expect(originPosition[0]).toBe(4)
-        expect(originPosition[1]).toBe(1)
+        expect(originPosition[0]).toBe(3)
+        expect(originPosition[1]).toBe(0)
     })
 
     test('move top position', () => {

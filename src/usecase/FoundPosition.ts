@@ -44,7 +44,7 @@ export class FoundPosition {
         }
 
         return {
-            originPosition: [currentRow + 1, currentCol + 1],
+            originPosition: [currentRow, currentCol],
             exitPosition: [exitRow, exitCol],
             matrix,
         }

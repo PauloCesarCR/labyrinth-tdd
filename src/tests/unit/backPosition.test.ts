@@ -1,7 +1,7 @@
 import { BackPosition } from '../../usecase/backPosition'
 
 describe('back position if necessary', () => {
-    test('should return each position back to the start', () => {
+    test('position back', () => {
         const sut = new BackPosition()
 
         let lastPositions: number[][] = [
@@ -14,15 +14,11 @@ describe('back position if necessary', () => {
         ]
 
         let positionsToTest = [...lastPositions]
+        
+        const backPosition = sut.execute(positionsToTest, 2)
 
-        while (positionsToTest.length > 0) {
-            const expectedPosition = positionsToTest[positionsToTest.length - 1]
-            const backPosition = sut.execute(positionsToTest)
+        expect(backPosition[0]).toBe(3)
+        expect(backPosition[1]).toBe(3)
 
-            expect(backPosition[0]).toBe(expectedPosition[0])
-            expect(backPosition[1]).toBe(expectedPosition[1])
-
-            positionsToTest.pop()
-        }
     })
 })

@@ -13,7 +13,7 @@ export class readFileRepository implements readFileInterface {
             }
             return lines
         } catch (error) {
-            throw new Error('erro')
+            throw new Error(error)
         }
     }
 }
