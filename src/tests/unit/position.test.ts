@@ -1,5 +1,5 @@
 import { FoundPosition } from '../../usecase/FoundPosition'
-import { PositionNew } from '../../usecase/newPosition'
+import { MovePosition } from '../../usecase/MovePosition'
 
 describe('change position', () => {
     test('found start position', () => {
@@ -24,7 +24,7 @@ describe('change position', () => {
 
     test('move top position', () => {
         //arrange
-        const sut = new PositionNew()
+        const sut = new MovePosition()
         const lines: ReadonlyArray<string> = [
             '5 8',
             '1 1 1 1 1 1 1 1',
@@ -47,7 +47,7 @@ describe('change position', () => {
     })
 
     test('move left position', () => {
-        const sut = new PositionNew()
+        const sut = new MovePosition()
 
         const lines: ReadonlyArray<string> = [
             '5 8',
@@ -69,7 +69,7 @@ describe('change position', () => {
     })
 
     test('move right position', () => {
-        const sut = new PositionNew()
+        const sut = new MovePosition()
 
         const lines: ReadonlyArray<string> = [
             '5 8',
@@ -91,7 +91,7 @@ describe('change position', () => {
     })
 
     test('move bottom position', () => {
-        const sut = new PositionNew()
+        const sut = new MovePosition()
 
         const lines: ReadonlyArray<string> = [
             '5 8',

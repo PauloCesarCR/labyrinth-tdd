@@ -2,10 +2,11 @@ import { readFileRepository } from './infra/repositories/readFileRepository'
 import { readFileInterface } from './interfaces/readFileInterface'
 import { FoundPosition } from './usecase/FoundPosition'
 import { BackPosition } from './usecase/backPosition'
-import { PositionNew } from './usecase/newPosition'
+import { PositionNew } from './usecase/MovePosition'
 import { NextPlay } from './usecase/nextPlay'
 import { LabirintoState } from './labirintyState'
-class Main {
+
+export class Main {
 
     constructor(
         readonly repository: readFileInterface

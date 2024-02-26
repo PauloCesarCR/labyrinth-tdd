@@ -1,4 +1,4 @@
-export class PositionNew {
+export class MovePosition {
     constructor() {}
 
     execute(
